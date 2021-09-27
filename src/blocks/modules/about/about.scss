@@ -123,25 +123,38 @@
         }
     }
 
+    .about-more {
+        overflow-x: scroll;
+        grid-template-columns: repeat(4, 330px);
+    }
+
     .about-slider {
         width: 100%;
 
         .about-more__item {
             margin-top: 0 !important;
             width: 330px;
+            margin-bottom: 20px;
         }
     }
 }
 
 @media (max-width: 950px) {
-    .about__row{
+    .about__row {
         margin-top: 15px;
     }
+
+    .about-more {
+        grid-template-columns: repeat(4, 275px);
+        gap: 0 15px;
+    }
+
     .about-slider {
         .about-more__item {
             width: 275px;
             padding: 20px;
             height: auto;
+            margin-bottom: 10px;
 
             .img {
                 width: 25px;
@@ -172,9 +185,16 @@
                 font-size: 14px;
                 line-height: 24px;
             }
-            .btn{
+
+            .btn {
                 margin-top: 0;
             }
         }
+    }
+}
+
+@media (max-width: 650px) {
+    .about-more {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

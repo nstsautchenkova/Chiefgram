@@ -95,7 +95,7 @@ $(document).on("ready", function () {
     if (window.matchMedia("(max-width: 1370px)").matches) {
 
         // about-slider
-        $(".about-slider").addClass('swiper-container');
+        /* $(".about-slider").addClass('swiper-container');
         $(".about-more").addClass('swiper-wrapper');
         $(".about-slider .swiper-wrapper").removeClass('about-more');
         $(".about-more__item").addClass('swiper-slide');
@@ -146,8 +146,6 @@ $(document).on("ready", function () {
         var blog_slider = new Swiper(".blog-slider", {
             slidesPerView: 'auto',
             spaceBetween: 30,
-            slideToClickedSlide:true,
-            loop:true,
             scrollbar: {
                 el: '.blog-slider .swiper-scrollbar',
                 hide: false,
@@ -157,7 +155,7 @@ $(document).on("ready", function () {
                     spaceBetween: 15
                 },
             }
-        });
+        }); */
         
     } else { }
 });
